@@ -1,0 +1,10 @@
+c:\users\edmar\source\repos\OfficePS\OfficePS\bin\Debug\netcoreapp2.0\OfficePS.deps.json
+c:\users\edmar\source\repos\OfficePS\OfficePS\bin\Debug\netcoreapp2.0\OfficePS.runtimeconfig.json
+c:\users\edmar\source\repos\OfficePS\OfficePS\bin\Debug\netcoreapp2.0\OfficePS.runtimeconfig.dev.json
+c:\users\edmar\source\repos\OfficePS\OfficePS\bin\Debug\netcoreapp2.0\OfficePS.dll
+c:\users\edmar\source\repos\OfficePS\OfficePS\bin\Debug\netcoreapp2.0\OfficePS.pdb
+c:\users\edmar\source\repos\OfficePS\OfficePS\obj\Debug\netcoreapp2.0\OfficePS.csproj.CoreCompileInputs.cache
+c:\users\edmar\source\repos\OfficePS\OfficePS\obj\Debug\netcoreapp2.0\OfficePS.AssemblyInfoInputs.cache
+c:\users\edmar\source\repos\OfficePS\OfficePS\obj\Debug\netcoreapp2.0\OfficePS.AssemblyInfo.cs
+c:\users\edmar\source\repos\OfficePS\OfficePS\obj\Debug\netcoreapp2.0\OfficePS.dll
+c:\users\edmar\source\repos\OfficePS\OfficePS\obj\Debug\netcoreapp2.0\OfficePS.pdb

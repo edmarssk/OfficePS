@@ -1,0 +1,15 @@
+C:\Users\edmar\source\repos\OfficePS\OfficePS
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=OfficePS
+--content-root=C:\Users\edmar\source\repos\OfficePS\OfficePS
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Acesso\Cadastrar.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Acesso\Login.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Home\Create.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Home\Details.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Home\Edit.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Home\Index.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Procedimento\Create.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Procedimento\Index.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\Shared\_Layout.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\_ViewImports.cshtml
+--file=C:\Users\edmar\source\repos\OfficePS\OfficePS\Views\_ViewStart.cshtml
