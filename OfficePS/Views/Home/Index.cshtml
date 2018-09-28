@@ -1,0 +1,28 @@
+﻿
+    @model IEnumerable<OfficePS.ViewModels.ClienteVM>
+
+
+    <h2 class="h2">@ViewBag.TitleClientes</h2>
+    <p>Vamos mostrar os clientes</p>
+
+    @foreach (var item in Model)
+    {
+    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+        <div class="thumbnail col-lg-12">
+            <img src="~/image/perfil/@item.FotoPerfil" style="height:210px; width:210px" alt="" />
+            <a asp-action="Edit" asp-controller="Home" asp-id="@item.ClientesId">Editar</a>
+            <div class="caption">
+                <h4><a asp-controller="Home" asp-action="Details" asp-route-id="@item.ClientesId">@item.Nome</a>   Telefone: @item.Telefone</h4>
+                <h4><a asp-controller="Home" asp-action="Edit" asp-route-id="@item.ClientesId">Editar cliente</a> </h4>
+                <h4 class="pull-right">@item.Email  @item.Cpf </h4>
+            </div>
+        </div>
+    </div>
+    }
+
+<div>
+    <a asp-action="Create" asp-controller="Home">Incluir novo cliente</a>
+</div>
+
+
+

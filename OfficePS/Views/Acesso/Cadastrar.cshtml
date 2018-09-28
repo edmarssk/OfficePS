@@ -1,0 +1,29 @@
+﻿@model OfficePS.ViewModels.UsuarioAcessoVM
+
+<h2>Faça seu cadastro</h2>
+
+<div id="login-row" class="row justify-content-center align-items-center">
+    <div id="login-column" class="col-md-6">
+        <div class="login-box col-md-12">
+            <form asp-controller="Acesso" class="form" asp-action="Cadastrar" method="post">
+                <h3 class="text-center text-info">Login</h3>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="NomeUsuario" class="text-info">Usuário:</label><br>
+                    <input asp-for="NomeUsuario" required class="form-control">
+                    <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Senha" class="text-info">Senha:</label><br>
+                    <input asp-for="Senha" required type="password" class="form-control">
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-info btn-md" value="Cadastrar">
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</div>
+

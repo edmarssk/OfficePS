@@ -1,0 +1,53 @@
+﻿@using Microsoft.AspNetCore.Identity
+<!DOCTYPE html>
+
+@inject SignInManager<IdentityUser> sighInManager
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/content/site.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="container body-content">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-controller="Home" asp-action="Index" class="navbar-brand">Clientes</a></li>
+                        <li><a asp-controller="Procedimento" asp-action="Index" class="navbar-brand">Procedimentos</a></li>
+                    </ul>
+                    @if (sighInManager.IsSignedIn(User))
+                    {
+                        <form asp-area="" asp-controller="Acesso" asp-action="Logout" id="logoutForm" class="navbar-right" method="post">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">Sair</a>
+                                </li>
+                            </ul>
+                        </form>
+                    }
+                    else
+                    {
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a asp-controller="Acesso" asp-action="Cadastrar" class="navbar-brand">Cadastre-se</a></li>
+                            <li><a asp-controller="Acesso" asp-action="Login" class="navbar-brand">Login</a></li>
+                        </ul>
+                    }
+
+                    @*<li><a href="s" class="navbar-brand">Login</a></li>*@
+
+                </div>
+            </div>
+        </nav>
+        <button id="botaoAbrirFechar" value="Fechar" formnovalidate="formnovalidate" class="top-right"> Fechar</button>
+        <div id="divPrincipal" class="row">
+
+            @RenderBody()
+        </div>
+        <script src="~/js/global.js"></script>
+    </div>
+</body>
+</html>
